@@ -2,7 +2,7 @@
 
 # : Manager {{{
 
-[manager]
+[mgr]
 cwd = { fg = "#9ccfd8" }
 
 # Hovered
@@ -19,8 +19,8 @@ marker_copied = { fg = "#f6c177", bg = "#f6c177" }
 marker_cut = { fg = "#B4637A", bg = "#B4637A" }
 
 # Tab
-tab_active = { fg = "#e0def4", bg = "#191724" }
-tab_inactive = { fg = "#e0def4", bg = "#2A273F" }
+tab_active = {}
+tab_inactive = {}
 tab_width = 1
 
 # Border
@@ -32,13 +32,18 @@ syntect_theme = "~/.config/yazi/rose-pine.tmTheme"
 
 # : }}}
 
+# : Tabs {{{
+
+[tabs]
+active = { fg = "#e0def4", bg = "#191724", bold = true }
+inactive = { fg = "#e0def4", bg = "#2A273F" }
+# }}}
 
 # : Status {{{
 
 [status]
-separator_open = ""
-separator_close = ""
-separator_style = { fg = "#2A273F", bg = "#2A273F" }
+# separator_open = ""
+# separator_close = ""
 
 # Progress
 progress_label = { fg = "#e0def4", bold = true }
@@ -46,11 +51,11 @@ progress_normal = { fg = "#191724", bg = "#2A273F" }
 progress_error = { fg = "#B4637A", bg = "#2A273F" }
 
 # Permissions
-permissions_t = { fg = "#31748f" }
-permissions_r = { fg = "#f6c177" }
-permissions_w = { fg = "#B4637A" }
-permissions_x = { fg = "#9ccfd8" }
-permissions_s = { fg = "#524f67" }
+perm_type = { fg = "#31748f" }
+perm_read = { fg = "#f6c177" }
+perm_write = { fg = "#B4637A" }
+perm_exec = { fg = "#9ccfd8" }
+perm_sep = { fg = "#524f67" }
 
 # : }}}
 
@@ -75,14 +80,13 @@ selected = { reversed = true }
 # : }}}
 
 
-# : Select {{{
+# : Pick {{{
 
-[select]
+[pick]
 border = { fg = "#524f67" }
 active = { fg = "#eb6f92" }
 inactive = {}
-
-# : }}}
+# }}} 
 
 
 # : Tasks {{{
@@ -133,13 +137,7 @@ rules = [
     { mime = "audio/*", fg = "#f6c177" },
 
     # Archives
-    { mime = "application/zip", fg = "#eb6f92" },
-    { mime = "application/gzip", fg = "#eb6f92" },
-    { mime = "application/x-tar", fg = "#eb6f92" },
-    { mime = "application/x-bzip", fg = "#eb6f92" },
-    { mime = "application/x-bzip2", fg = "#eb6f92" },
-    { mime = "application/x-7z-compressed", fg = "#eb6f92" },
-    { mime = "application/x-rar", fg = "#eb6f92" },
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#eb6f92" },
 
     # Fallback
     { name = "*", fg = "#e0def4" },
