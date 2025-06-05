@@ -35,18 +35,15 @@ syntect_theme = "~/.config/yazi/rose-pine.tmTheme"
 # : Tabs {{{
 
 [tabs]
-active = { fg = "#e0def4", bg = "#191724", bold = true }
-inactive = { fg = "#e0def4", bg = "#2A273F" }
-sep_left  = { open = "", close = "" }
-sep_right = { open = "", close = "" }
+active = { fg = "#26233a", bg = "#ebbcba", bold = true }
+inactive = { fg = "#ebbcba", bg = "#26233a" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
 # }}}
 
 # : Status {{{
 
 [status]
-sep_left  = { open = "", close = "" }
-sep_right = { open = "", close = "" }
-
 # Progress
 progress_label = { fg = "#e0def4", bold = true }
 progress_normal = { fg = "#191724", bg = "#2A273F" }
