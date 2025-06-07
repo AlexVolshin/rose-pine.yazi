@@ -19,8 +19,6 @@ marker_copied = { fg = "#f6c177", bg = "#f6c177" }
 marker_cut = { fg = "#B4637A", bg = "#B4637A" }
 
 # Tab
-tab_active = {}
-tab_inactive = {}
 tab_width = 1
 
 # Border
@@ -35,15 +33,19 @@ syntect_theme = "~/.config/yazi/rose-pine.tmTheme"
 # : Tabs {{{
 
 [tabs]
-active = { fg = "#26233a", bg = "#ebbcba", bold = true }
+active = { fg = "#26233a", bg = "#ebbcba" }
 inactive = { fg = "#ebbcba", bg = "#26233a" }
-sep_inner = { open = "", close = "" }
-sep_outer = { open = "", close = "" }
+sep_inner = { open = " ", close = " " }
+sep_outer = { open = " ", close = " " }
 # }}}
 
 # : Status {{{
 
 [status]
+# Separators
+sep_left = { open = "  ", close = " " }
+sep_right = { open = " ", close = "  " }
+
 # Progress
 progress_label = { fg = "#e0def4", bold = true }
 progress_normal = { fg = "#191724", bg = "#2A273F" }
