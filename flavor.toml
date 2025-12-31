@@ -5,10 +5,6 @@
 [mgr]
 cwd = { fg = "#9ccfd8" }
 
-# Hovered
-hovered = { fg = "#e0def4", bg = "#26233a" }
-preview_hovered = { underline = true }
-
 # Find
 find_keyword = { fg = "#f6c177", italic = true }
 find_position = { fg = "#eb6f92", bg = "reset", italic = true }
@@ -28,6 +24,14 @@ border_style = { fg = "#524f67" }
 # Highlighting
 syntect_theme = "~/.config/yazi/rose-pine.tmTheme"
 
+# : }}}
+
+# : Indicator {{{
+
+[indicator]
+current = { fg = "#e0def4", bg = "#26233a" }
+preview = { underline = true }
+padding = { open = "█", close = "█" }
 # : }}}
 
 # : Tabs {{{
