@@ -29,9 +29,11 @@ syntect_theme = "~/.config/yazi/rose-pine.tmTheme"
 # : Indicator {{{
 
 [indicator]
+parent = { fg = "#e0def4", bg = "#26233a" }
 current = { fg = "#e0def4", bg = "#26233a" }
 preview = { underline = true }
 padding = { open = "█", close = "█" }
+
 # : }}}
 
 # : Tabs {{{
