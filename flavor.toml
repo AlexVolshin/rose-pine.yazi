@@ -147,8 +147,8 @@ rules = [
     { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#eb6f92" },
 
     # Fallback
-    { name = "*", fg = "#e0def4" },
-    { name = "*/", fg = "#524f67" },
+    { url = "*", fg = "#e0def4" },
+    { mime = "*/", fg = "#524f67" },
 ]
 
 # : }}}
