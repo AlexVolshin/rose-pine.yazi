@@ -152,3 +152,46 @@ rules = [
 ]
 
 # : }}}
+
+# : Icon-specific styles {{{
+
+[icon]
+prepend_dirs = [
+    { name = ".cache", text = "󰃨", fg = "#535066" },
+    { name = "cache", text = "󰃨", fg = "#535066" },
+    { name = ".config", text = "", fg = "#535066" },
+    { name = ".npm", text = "", fg = "#535066" },
+    { name = ".pi", text = "", fg = "#535066" },
+    { name = ".ssh", text = "", fg = "#535066" },
+    { name = ".steam", text = "", fg = "#535066" },
+    { name = ".wine", text = "", fg = "#535066" },
+    { name = ".git", text = "", fg = "#535066" },
+    { name = "Разработка", text = "", fg = "#535066" },
+    	{ name = "Desktop", text = "", fg = "#535066" },
+    	{ name = "Рабочий стол", text = "", fg = "#535066" },
+	{ name = "Development", text = "", fg = "#535066" },
+	{ name = "Documents", text = "", fg = "#535066" },
+	{ name = "Документы", text = "", fg = "#535066" },
+	{ name = "Downloads", text = "", fg = "#535066" },
+	{ name = "Загрузки", text = "", fg = "#535066" },
+	{ name = "Library", text = "", fg = "#535066" },
+	{ name = "Шаблоны", text = "", fg = "#535066" },
+	{ name = "Music", text = "", fg = "#535066" },
+	{ name = "Музыка", text = "", fg = "#535066" },
+	{ name = "Pictures", text = "", fg = "#535066" },
+	{ name = "Изображения", text = "", fg = "#535066" },
+	{ name = "Public", text = "", fg = "#535066" },
+	{ name = "Общедоступные", text = "", fg = "#535066" },
+	{ name = "Videos", text = "", fg = "#535066" },
+	{ name = "Видео", text = "", fg = "#535066" },
+	{ name = "Notes", text = "", fg = "#535066" },
+	{ name = "Заметки", text = "", fg = "#535066" },
+]
+
+prepend_conds = [
+    { if = "dir", text = "", fg = "#535066" },
+    { if = "!dir", text = "", fg = "#535066" },
+]
+
+# : }}}
+
