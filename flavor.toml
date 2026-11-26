@@ -41,16 +41,16 @@ padding = { open = "█", close = "█" }
 [tabs]
 active = { fg = "#26233a", bg = "#ebbcba" }
 inactive = { fg = "#ebbcba", bg = "#26233a" }
-sep_inner = { open = " ", close = " " }
-sep_outer = { open = " ", close = " " }
+sep_inner = { open = "", close = " " }
+sep_outer = { open = "", close = " " }
 # }}}
 
 # : Status {{{
 
 [status]
 # Separators
-sep_left = { open = "  ", close = " " }
-sep_right = { open = " ", close = "  " }
+sep_left = { open = " ", close = " " }
+sep_right = { open = " ", close = " " }
 
 # Progress
 progress_label = { fg = "#e0def4", bold = true }
